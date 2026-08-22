@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Scholar Sidekick</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Scholar Sidekick</h1>
+    <p class="subtitle">Papers, books &amp; discussions for whatever you're working on</p>
+  </header>
+
+  <main>
+    <textarea id="topic" placeholder="What are you researching? (e.g. 'transformer attention mechanisms for my NLP assignment')" rows="3"></textarea>
+
+    <label class="context-toggle">
+      <input type="checkbox" id="useContext" checked />
+      Use context from the current page
+    </label>
+
+    <button id="searchBtn">Find resources</button>
+
+    <div id="status"></div>
+
+    <div id="results"></div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
