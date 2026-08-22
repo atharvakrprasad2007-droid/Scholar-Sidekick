@@ -58,11 +58,8 @@ Runs on `http://localhost:3000`.
   it noticeably improves relevance.
 - **Papers via: Google Scholar (live)** vs **Papers via: Semantic Scholar (reason)**
   in the status line shows exactly what happened — e.g. "Semantic Scholar (Google
-  Scholar blocked the request (bot-check/CAPTCHA))". Good either way to point out
-  live: "here's real Scholar working" or "here's the exact reason it fell back,
-  and the fallback saving the demo" are both honest, credible moments.
-
-
+  Scholar blocked the request (bot-check/CAPTCHA))".
+  
 ## Safety & reliability features
 
 - **Sensitive-topic confirm gate**: before running any search, the backend classifies
