@@ -55,16 +55,13 @@ Runs on `http://localhost:3000`.
 
 - Open it on a page related to your topic (a syllabus, a Wikipedia article,
   your own notes doc) and leave "Use context from the current page" checked —
-  it noticeably improves relevance and is a good live demo moment.
-- Have 2-3 topics ready to try (one STEM, one humanities) to show the
-  Stack Exchange site auto-routing working.
+  it noticeably improves relevance.
 - **Papers via: Google Scholar (live)** vs **Papers via: Semantic Scholar (reason)**
   in the status line shows exactly what happened — e.g. "Semantic Scholar (Google
   Scholar blocked the request (bot-check/CAPTCHA))". Good either way to point out
   live: "here's real Scholar working" or "here's the exact reason it fell back,
   and the fallback saving the demo" are both honest, credible moments.
-- If your demo wifi is unreliable, do a dry run beforehand and screen-record
-  a backup.
+
 
 ## Safety & reliability features
 
@@ -82,9 +79,28 @@ Runs on `http://localhost:3000`.
 - **Load more**: each section has a "Show more" button that re-queries the backend
   with the titles already shown excluded, so you get a fresh batch instead of repeats.
 
-## Extending it further (if you have time left)
+## Extending it further (Scalability)
 
 - Cache results in-memory so re-running the same topic is instant
-- Add a "save to reading list" button that persists via `chrome.storage`
-- Swap Google Books for Open Library if you want fuller metadata
+- Adding a "save to reading list" button that persists via `chrome.storage`
+- Swapping Google Books for Open Library if you want fuller metadata
 - Add arXiv as a source for very recent preprints (free API, no key needed)
+- Collaborating with API agents like **Claude** and **Gemini** for making API credits or tokens available to consumers at discounted prices
+
+## Revenue Model
+- 1. Freemium with search caps (the standard starting model)
+
+Free tier: e.g. 10 searches/month — enough to try it, not enough for a whole semester
+Paid tier: ~$4-8/month for unlimited searches, priced below Elicit/Consensus since you're targeting students on a budget, not funded researchers
+
+
+2. Institutional/B2B — probably the stronger path
+
+Sell to a university library, writing center, or a specific department (not individual students) as a bundled tool: "give every student in this course access"
+One deal = hundreds of users at once, and universities already have budget lines for exactly this kind of tool (compare: library database subscriptions, Grammarly for Education, etc.)
+Pricing here is typically an annual site license, not per-user — much more predictable revenue than chasing individual signups
+
+3. Affiliate/referral on the books results
+
+When a textbook is recommended, link through Amazon Associates or a similar program — small commission, doesn't cost the student anything extra, and you already have book recommendations built in
+
